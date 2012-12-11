@@ -1,0 +1,6 @@
+cookbooks:
+- apache2:
+nodes:
+- ec2:
+    - recipe[apache]
+    - --flavor t1.micro --image ami-1301877a --ssh-user ubuntu --identity-file /home/jlee/ec2/jlee-va.pem --ssh-key jlee-va  
